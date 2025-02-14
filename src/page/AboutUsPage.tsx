@@ -39,7 +39,8 @@ export default function AboutUsPage() {
             <h1 className="text-4xl md:text-6xl font-bold mb-8 relative">
               <span
                 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-500 
-            drop-shadow-[0_0_25px_rgba(74,222,128,0.5)]">
+            drop-shadow-[0_0_25px_rgba(74,222,128,0.5)]"
+              >
                 Nurture Your Natural Beauty, Reveal Your Radiance..
               </span>
             </h1>
@@ -74,7 +75,8 @@ export default function AboutUsPage() {
                   {/* Mentor Card */}
                   <div
                     className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 transition-all duration-300 
-                            hover:shadow-xl hover:-translate-y-2">
+                            hover:shadow-xl hover:-translate-y-2"
+                  >
                     {/* Name Tag */}
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                       <div className="bg-gray-800 text-[#98FB98] px-6 py-2 rounded-full whitespace-nowrap">
@@ -93,22 +95,26 @@ export default function AboutUsPage() {
                     <div className="flex justify-center gap-4 pt-4">
                       <a
                         href={mentor.socials.github}
-                        className="text-gray-800 hover:text-gray-600 transition-colors">
+                        className="text-gray-800 hover:text-gray-600 transition-colors"
+                      >
                         <FaGithub size={24} />
                       </a>
                       <a
                         href={mentor.socials.telegram}
-                        className="text-gray-800 hover:text-gray-600 transition-colors">
+                        className="text-gray-800 hover:text-gray-600 transition-colors"
+                      >
                         <FaTelegram size={24} />
                       </a>
                       <a
                         href={mentor.socials.linkedin}
-                        className="text-gray-800 hover:text-gray-600 transition-colors">
+                        className="text-gray-800 hover:text-gray-600 transition-colors"
+                      >
                         <FaLinkedin size={24} />
                       </a>
                       <a
                         href={mentor.socials.email}
-                        className="text-gray-800 hover:text-gray-600 transition-colors">
+                        className="text-gray-800 hover:text-gray-600 transition-colors"
+                      >
                         <FaEnvelope size={24} />
                       </a>
                     </div>

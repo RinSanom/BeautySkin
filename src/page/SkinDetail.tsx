@@ -5,7 +5,9 @@ import Products from "../lib/Products";
 
 export default function SkinDetail() {
   const { id } = useParams();
-  const product = Products.find((product) => product.id === parseInt(id));
+  const product = id
+    ? Products.find((product) => product.id === parseInt(id))
+    : null;
 
   if (!product) {
     return (

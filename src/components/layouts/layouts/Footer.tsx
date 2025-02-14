@@ -22,22 +22,25 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/shop"
-                    className="text-muted-foreground hover:text-primary">
+                    to="/shop"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/makeup"
-                    className="text-muted-foreground hover:text-primary">
+                    to="/makeup"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Makeup
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/skincare"
-                    className="text-muted-foreground hover:text-primary">
+                    to="/skincare"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Skin Care
                   </Link>
                 </li>
@@ -48,15 +51,17 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/aboutus"
-                    className="text-muted-foreground hover:text-primary">
+                    to="/aboutus"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/contact"
-                    className="text-muted-foreground hover:text-primary">
+                    to="/contact"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -67,29 +72,33 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/refund-policy"
-                    className="text-muted-foreground hover:text-primary">
+                    to="/refund-policy"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Refund Policy
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/terms"
-                    className="text-muted-foreground hover:text-primary">
+                    to="/terms"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Terms & Conditions
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/privacy"
-                    className="text-muted-foreground hover:text-primary">
+                    to="/privacy"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/faq"
-                    className="text-muted-foreground hover:text-primary">
+                    to="/faq"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     FAQ
                   </Link>
                 </li>
