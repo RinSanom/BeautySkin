@@ -53,20 +53,22 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap gap-4 text-center">
               <a
                 href="#"
-                className="block w-full rounded-sm bg-pink-600 px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-pink-700 focus:ring-3 focus:outline-hidden sm:w-auto">
+                className="block w-full rounded-sm bg-pink-600 px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-pink-700 focus:ring-3 focus:outline-hidden sm:w-auto"
+              >
                 Get Started
               </a>
 
               <a
                 href="#"
-                className="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow-sm hover:text-rose-700 focus:ring-3 focus:outline-hidden sm:w-auto">
+                className="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow-sm hover:text-rose-700 focus:ring-3 focus:outline-hidden sm:w-auto"
+              >
                 Learn More
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="px-32 pt-20">
+      <section className="px-32 pt-20">
         <div>
           <div className="">
             <h2 className="text-3xl font-extrabold text-pink-600 sm:text-5xl   ">
@@ -110,7 +112,8 @@ export default function HomePage() {
 
             <a
               className="mt-8 inline-block w-full bg-pink-600 py-4 text-sm font-bold uppercase tracking-widest text-white"
-              href="#">
+              href="#"
+            >
               Get Discount
             </a>
 
@@ -137,7 +140,8 @@ export default function HomePage() {
             {categories.map((category) => (
               <div
                 key={category.id}
-                className={`relative group overflow-hidden rounded-lg ${category.className}`}>
+                className={`relative group overflow-hidden rounded-lg ${category.className}`}
+              >
                 <img
                   src={category.image}
                   alt={category.name}

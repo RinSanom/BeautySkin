@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 
 import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Header className="sticky top-0 left-0 z-50 py-4 px-32 flex items-center justify-between border-b w-full bg-white shadow-md">
+    <header className="sticky top-0 left-0 z-50 py-4 px-32 flex items-center justify-between border-b w-full bg-white shadow-md">
       <Link to="/" className="text-2xl font-serif text-pink-600 flex">
         <img className="w-[50px]" src="../src/assets/logo/logo.png" alt="" />
         <p className="m-auto">SkinBeauty</p>
@@ -26,7 +26,7 @@ export default function Header() {
       </nav>
       {/* Account & Cart */}
       <div className="flex items-center gap-4">
-        <Link href="/account" className="hover:text-primary">
+        <Link to="/account" className="hover:text-primary">
           <span className="sr-only">Account</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,15 +38,14 @@ export default function Header() {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="w-5 h-5">
+            className="w-5 h-5"
+          >
             <circle cx="12" cy="8" r="5" />
             <path d="M20 21a8 8 0 1 0-16 0" />
           </svg>
         </Link>
 
-        <Link
-          href="/cart"
-          className="flex items-center gap-2 hover:text-primary">
+        <Link to="/cart" className="flex items-center gap-2 hover:text-primary">
           <span>$0.00</span>
           <FaShoppingCart />
           <span className="inline-flex items-center justify-center w-4 h-4 text-xs bg-primary text-white rounded-full">
@@ -57,7 +56,8 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2 focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}>
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
@@ -83,6 +83,6 @@ export default function Header() {
           </nav>
         </div>
       )}
-    </Header>
+    </header>
   );
 }
