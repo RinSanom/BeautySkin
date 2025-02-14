@@ -53,7 +53,6 @@ export default function AboutUsPage() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/50 to-transparent -z-10" />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 -z-20" />
-          <div className="absolute inset-0 bg-[url('/api/placeholder/20/20')] opacity-5 -z-10" />
         </div>
       </section>
       <section>
